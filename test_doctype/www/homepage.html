@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frappe Professional Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Fade-in animations */
+    @keyframes fadeIn { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+    .animate-fadeIn { animation: fadeIn 1s ease-out forwards; }
+    .animate-delay-1 { animation-delay: 0.2s; }
+    .animate-delay-2 { animation-delay: 0.4s; }
+    .animate-delay-3 { animation-delay: 0.6s; }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-700">
+
+  <!-- Header / Hero Section -->
+  <header class="bg-white shadow-md py-12 px-10 text-center animate-fadeIn">
+    <h1 class="text-5xl font-bold text-gray-900">Frappe Professional Dashboard</h1>
+    <p class="text-gray-500 mt-3 text-lg">Navigate your Doctypes, monitor system stats, and manage your business efficiently</p>
+    <a href="#doctypes" class="mt-6 inline-block px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-all animate-delay-1">Get Started</a>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="flex justify-center flex-wrap gap-4 mt-8 animate-fadeIn animate-delay-2">
+    <a href="http://localhost:8002/app/doctype?module=Desk" class="px-5 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition-all">Doctypes</a>
+    <a href="http://localhost:8002/name" class="px-5 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition-all">Website</a>
+    <a href="#about" class="px-5 py-3 bg-yellow-600 text-white rounded-lg shadow hover:bg-yellow-700 transition-all">About</a>
+    <a href="" class="px-5 py-3 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition-all">Console</a>
+  </nav>
+
+  <!-- Doctype / Website Navigation Section -->
+  <section id="doctypes" class="max-w-6xl mx-auto mt-12 px-6 animate-fadeIn animate-delay-1">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Quick Access to Doctypes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <a href="/app/Customer" class="block bg-blue-500 text-white p-6 rounded-xl shadow hover:bg-blue-600 transition-all text-center">Customer</a>
+      <a href="/app/Sales Order" class="block bg-green-500 text-white p-6 rounded-xl shadow hover:bg-green-600 transition-all text-center">Sales Order</a>
+      <a href="/app/Item" class="block bg-yellow-500 text-white p-6 rounded-xl shadow hover:bg-yellow-600 transition-all text-center">Item</a>
+      <a href="/app/Project" class="block bg-purple-500 text-white p-6 rounded-xl shadow hover:bg-purple-600 transition-all text-center">Project</a>
+      <a href="/app/Vendor" class="block bg-indigo-500 text-white p-6 rounded-xl shadow hover:bg-indigo-600 transition-all text-center">Vendor</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-4xl mx-auto mt-16 px-6 py-12 bg-white rounded-xl shadow-md animate-fadeIn animate-delay-2">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center">About ERPNext Dashboard</h2>
+    <p class="text-gray-700 text-lg text-center leading-relaxed">
+      This professional dashboard provides quick access to all your important Doctypes, website pages, and system logs.  
+      Designed for efficiency, clarity, and modern usability, it allows users to navigate ERPNext modules effortlessly and monitor system performance in real-time.
+    </p>
+  </section>
+
+  <!-- System Console Section -->
+  <section id="console" class="max-w-4xl mx-auto mt-16 px-6 py-8 bg-black bg-opacity-80 rounded-xl shadow-md text-green-400 font-mono animate-fadeIn animate-delay-3">
+    <h2 class="text-2xl font-semibold mb-4 text-cyan-400">System Console</h2>
+    <pre class="overflow-x-auto">
+Connecting to system...
+Fetching active Doctypes...
+Customer ✔
+Sales Order ✔
+Item ✔
+Project ✔
+Vendor ✔
+System ready ✅
+    </pre>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white mt-16 py-6 text-center text-gray-500 shadow-inner animate-fadeIn">
+    <p>© 2025 ERPNext Professional Dashboard</p>
+  </footer>
+
+</body>
+</html>
